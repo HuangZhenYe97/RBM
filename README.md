@@ -9,7 +9,7 @@ The code within the folder ['Statistic mechanics of RBM'](https://github.com/Hua
   ## RBM with binary synapse   
   As binary synapses are underivable, the common algorithms, like CD algorithm, fail to train RBM with binary synapse.  In the work ['How data, synapses and neurons interact with each other: a variational principle marrying gradient ascent and message passing'](https://arxiv.org/abs/1911.07662), an algorithm marrying variational method and massages passing can complete such a task. This code is a realization of the algorithom.  
   One can read the code in ipynb file. It contains the detail of code and some experiments reesults. What's more, you can just run:
-  ‘’‘
+  ```
   python experiments.py --random_seed=1
-  ’‘’.
+  ```
 Then experiments results can be obtained after sometime.
