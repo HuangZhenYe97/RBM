@@ -9,12 +9,10 @@ Created on Thu May 21 15:00:42 2020
 
 import numpy as np
 import matplotlib.pyplot as plt
-import pickle
 import time
 import torch
 import torchvision
 import torchvision.transforms as transforms
-import matplotlib.pyplot as plt
 from binary_RBM import *
 import argparse
 
@@ -172,9 +170,6 @@ def experiment_of_different_alpha():
             
         ol_10.append(ol)
     ol_10 = np.asarray(ol_10)
-    f = open('alpha_5.19', 'wb')
-    pickle.dump(ol_10, f)
-    f.close()
     label = ['q=0, P=3', 'q=0, P=2', 'q=0.3, P=2']
     for i in range(3):
         plt.errorbar([i+1 for i in range(ol_10.shape[1])], ol_10[:,:,i].mean(0), ol_10[:,:,i].std(0), label = label[i])
