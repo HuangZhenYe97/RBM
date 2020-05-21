@@ -12,4 +12,4 @@ The code within the folder ['Statistic mechanics of RBM'](https://github.com/Hua
   ```
   python experiments.py --random_seed=1
   ```
-Then experiments results can be obtained after sometime.
+Then experiments results can be obtained after sometime. Note that Pytorch is needed to load data of MNIST.
